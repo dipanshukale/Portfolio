@@ -4,7 +4,7 @@ const app = express();
 const path = require("path");
 const hbs = require("hbs");
 require('dotenv').config();
-const port = process.env.CONNECTION_PORT;
+const port = process.env.CONNECTION_PORT || 3000;
 const contact = require('../src/database/models/contactSchema');
 
 //join files
